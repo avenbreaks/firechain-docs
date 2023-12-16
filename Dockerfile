@@ -10,7 +10,7 @@ COPY requirements.txt requirements.txt
 RUN pip install -r requirements.txt --no-cache-dir
 
 # Switch to a non-root user (if 'nonroot' is already created)
-USER nonroot
+USER root
 
 # Build doc by default
 ENTRYPOINT ["mkdocs"]

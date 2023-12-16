@@ -2,10 +2,10 @@ version: "3.6"
 
 services:
   developer-docs:
-      image: "firechain-docs"
+      image: "avenbreak/firechain:latest"
       ports:
       - "0.0.0.0:8000:8000"
-      container_name: "serve-edge-docs"
+      container_name: "firechain-docs"
       working_dir: /workspace/
       volumes:
         - type: bind
